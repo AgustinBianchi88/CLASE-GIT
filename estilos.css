@@ -15,3 +15,23 @@ body {
 .titulo {
     color: blue;
 }
+
+.nombreEmpresa {
+    animation-name: titulo;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+@keyframes titulo {
+    from/* inicio */
+        {
+        transform: translate(-400px);
+        opacity: 0;
+    }
+    to/* fin */
+        {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
